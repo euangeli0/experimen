@@ -14,7 +14,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     msg.textContent = "Login berhasil...";
 
     setTimeout(() => {
-      window.location.href = "/halaman/halaman.html";
+      window.location.href = "halaman/halaman.html";
     }, 1500);
 
   } else {
@@ -22,3 +22,4 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     msg.textContent = "Username atau password salah!";
   }
 });
+
