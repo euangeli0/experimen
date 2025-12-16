@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayam Geprek Juara Pesan Sekarang</title>
+
+    <link rel="stylesheet" href="menu.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">GEPREK <span>JUARA</span></div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/halaman/halaman.html">Beranda</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#" class="btn-nav" onclick="pesanUmum()">Pesan Sekarang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Nikmati Ayam Geprek <br>dan Minuman Menyegarkan</h1>
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <div class="section-title">
+            <p>Makanan & Minuman</p>
+        </div>
+
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Ayam Geprek Original" class="menu-img">
+                <div class="menu-info">
+                    <h3>Soup Ayam</h3>
+                    <p class="menu-desc">Nasi + Soup Ayam</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 15.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Paket Geprek Original')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/ayam Mozzarella.jpg" alt="Geprek Mozzarella" class="menu-img">
+                <div class="menu-info">
+                    <h3>Paket Geprek Mozzarella</h3>
+                    <p class="menu-desc">Nasi + Ayam Geprek + Keju Mozzarella</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 20.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Paket Geprek Mozzarella')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Geprek Sambal Matah" class="menu-img">
+                <div class="menu-info">
+                    <h3>Ayamn Geprek</h3>
+                    <p class="menu-desc">Nasi + Ayam Crispy</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 18.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Paket Sambal Matah')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/ayam geprek samba lijo.jpg" alt="ayam geprek sambal ijo" class="menu-img">
+                <div class="menu-info">
+                    <h3>Ayam Geprek Sambal Hijau</h3>
+                    <p class="menu-desc">Nasi + Ayam Geprek + Sambal Hijau</p>
+                    <div class="menu-footer">
+                        <span class="price">RP 20.000</span>
+                        <button class="btn-order" onclick="pesanMenu ('Ayam Geprek Sambal Hijau')"><i
+                                class="fab fa-whatsapp"></i>Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/ayam sambalmata.jpg" alt="Paket Sambal" class="menu-img">
+                <div class="menu-info">
+                    <h3>Ayam Sambalmata</h3>
+                    <p class="menu-desc">Nasi + Ayam Sambalmata</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 20.000</span>
+                        <button class="btn-order" onclick="pesanMenu ('Ayam Sambalmata')">
+                            <i class="fab fa-whatsapp"></i>Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/pop ice.jpg" alt="pop ice" class="menu-img">
+                <div class="menu-info">
+                    <h3>Pop Ice</h3>
+                    <p class="menu-desc">Pop Ice Segar</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu ('Pop Ice')">
+                            <i class="fab fa-whatsapp"></i>Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/es teh.jpg" alt="es teh" class="menu-img">
+                <div class="menu-info">
+                    <h3>Ice Teh</h3>
+                    <p class="menu-desc">Es Teh Panas Atau Dingin</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu ('Es Teh')">
+                            <i class="fab fa-whatsapp"></i>Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="img/kopi.jpeg" alt="es teh" class="menu-img">
+                <div class="menu-info">
+                    <h3>Kopi</h3>
+                    <p class="menu-desc">Kopi Panas Atau Dingin</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu ('Es Teh')">
+                            <i class="fab fa-whatsapp"></i>Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/nutri sari.jpg" alt="Lemon Jeruk" class="menu-img">
+                <div class="menu-info">
+                    <h3>Lemon Jeruk</h3>
+                    <p class="menu-desc">Ice Jeruk Segar, manis-nya pas</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Es Jeruk Peras')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimoni" class="section testimonials">
+        <div class="section-title">
+            <h2>Apa Kata Mereka?</h2>
+        </div>
+        <div class="testi-grid">
+            <div class="testi-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>"Rasa-nya Enak juara banget! Ayamnya Juga Gede. <br>Minuman-nya juga Segar."</p>
+                <span class="customer-name">- Berlin</span>
+            </div>
+            <div class="testi-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>"Suka banget sama yang Pop Ice. Ada Buah-nya dan Manis-nya Juga Pass."</p>
+                <span class="customer-name">- Jestin</span>
+            </div>
+            <div class="testi-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                <p>"Tempat makan siang favorit. Murah meriah tapi rasanya mewah. Recommended!"</p>
+                <span class="customer-name">- Walter</span>
+            </div>
+        </div>
+    </section>
+
+    <footer id="lokasi">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tentang Kami</h3>
+                <p>Kami menyajikan ayam geprek dengan bumbu rahasia dan sambal ulek dadakan untuk menjaga kesegaran
+                    rasa dan minuman yang menyegarkan harimu.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Lokasi & Kontak</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> Jl. Perum Mahesa Unima, <br> Blok C, No 16</li>
+                    <li><i class="fas fa-phone"></i> 0813-8998-3202</li>
+                    <li><i class="fas fa-clock"></i> Buka: 10.00 - 21.00 WIB</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Media Sosial</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram fa-lg"></i> @geprekjuara</a><br>
+                    <a href="#"><i class="fab fa-tiktok fa-lg"></i> @geprekjuara</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Ayam Geprek Juara. All Rights Reserved.
+        </div>
+    </footer>
+
+    <a href="#" class="float-wa" onclick="pesanUmum()">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="pesanan.js"></script>
+</body>
+
+</html>
