@@ -1,38 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="login/styles.css">
+    <title>Kios Melkisna</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <div class="login-box">
-            <h2>Login</h2>
+    <header>
+        <nav class="navbar">
+            <div class="logo">KIOS <span>MELKISNA</span></div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="btn-nav">
+                <li><a href="menu.html">Harga Barang</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <form id="loginForm">
-                <div class="input-group">
-                    <input type="text" id="username" required>
-                    <label>Username</label>
-                </div>
-
-                <div class="input-group">
-                    <input type="password" id="password" required>
-                    <label>Password</label>
-                </div>
-
-                <button type="submit" class="btn">Login</button>
-                <p id="message"></p>
-            </form>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>SEDANG TUTUP</h1>
+            <p>Sampai Hari Jumat/Sabtu</p>
         </div>
-    </div>
-
-    <script src="login/script.js"></script>
+    </section>
 </body>
 
 </html>
-
