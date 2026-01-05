@@ -25,6 +25,15 @@
     <section id="menu" class="section" style="margin-top: 60px; padding-bottom: 50px;">
         <div class="section-title">
             <h2>DAFTAR BARANG</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Cari barang..." onkeyup="searchBarang()">
+                <div class="filter-favorit">
+                    <button onclick="tampilkanSemua()">Semua Barang</button>
+                    <button onclick="tampilkanFavorit()">Favorit ★</button>
+                </div>
+
+            </div>
+
         </div>
 
         <div class="menu-grid">
@@ -36,7 +45,7 @@
                     <p class="menu-desc">Stenga Bungkus Rp 20.000</p>
                     <div class="menu-footer">
                         <span class="price">Rp 39.000</span>
-                        <button class="btn-order" onclick="pesanMenu('Paket Geprek Original')">
+                        <button class="btn-order" onclick="pesanMenu('Nama Barang')">
                             <i class="fab fa-whatsapp"></i> Pesan
                         </button>
                     </div>
@@ -50,7 +59,7 @@
                     <p class="menu-desc">Stenga Bungkus Rp. 20.000</p>
                     <div class="menu-footer">
                         <span class="price">Rp 39.000</span>
-                        <button class="btn-order" onclick="pesanMenu('Paket Geprek Mozzarella')">
+                        <button class="btn-order" onclick="pesanMenu('Nama Barang')">
                             <i class="fab fa-whatsapp"></i> Pesan
                         </button>
                     </div>
@@ -64,7 +73,7 @@
                     <p class="menu-desc">Stenga Bungkus Rp 15.000</p>
                     <div class="menu-footer">
                         <span class="price">Rp 29.000</span>
-                        <button class="btn-order" onclick="pesanMenu('Paket Sambal Matah')">
+                        <button class="btn-order" onclick="pesanMenu('Nama Barang')">
                             <i class="fab fa-whatsapp"></i> Pesan
                         </button>
                     </div>
@@ -78,7 +87,7 @@
                     <p class="menu-desc">Rp. 2.000 1 Batang <br>Rp. 4.000 2 Batang</p>
                     <div class="menu-footer">
                         <span class="price">Rp 23.000</span>
-                        <button class="btn-order" onclick="pesanMenu('Nasi Goreng')">
+                        <button class="btn-order" onclick="pesanMenu('Nama Barang')">
                             <i class="fab fa-whatsapp"></i> Pesan
                         </button>
                     </div>
