@@ -144,6 +144,76 @@ header {
     margin-bottom: 50px;
 }
 
+/* --- PENCARIA BARANG --- */
+.search-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-container input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.search-container input:focus {
+    border-color: var(--primary-red);
+}
+
+/* FAFORIT */
+.filter-favorit {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-favorit button {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: 600;
+    background: #eee;
+}
+
+.filter-favorit button:hover {
+    background: var(--primary-red);
+    color: white;
+}
+
+/* Tombol favorit */
+.btn-fav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn-fav.active {
+    background: var(--accent-yellow);
+}
+
+
+.btn-save {
+    background-color: var(--primary-red);
+}
+
+.btn-save:hover {
+    background-color: var(--dark-red);
+}
+
+
 .section-title h2 {
     font-size: 2.5rem;
     color: var(--primary-red);
