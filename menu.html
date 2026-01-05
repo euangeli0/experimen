@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kios Melkisna</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">KIOS <span>MELKISNA</span></div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="btn-nav">Beranda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu" class="section" style="margin-top: 60px; padding-bottom: 50px;">
+        <div class="section-title">
+            <h2>DAFTAR BARANG</h2>
+        </div>
+
+        <div class="menu-grid">
+
+            <div class="menu-card">
+                <img src="img/surya.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Roko Surya</h3>
+                    <p class="menu-desc">Stenga Bungkus Rp 20.000</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 39.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Paket Geprek Original')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/sampoerna.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Roko Sampoerna</h3>
+                    <p class="menu-desc">Stenga Bungkus Rp. 20.000</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 39.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Paket Geprek Mozzarella')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/magnum.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Roko Magnum</h3>
+                    <p class="menu-desc">Stenga Bungkus Rp 15.000</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 29.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Paket Sambal Matah')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/djisamsoe.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Dji Sam Soe</h3>
+                    <p class="menu-desc">Rp. 2.000 1 Batang <br>Rp. 4.000 2 Batang</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 23.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Nasi Goreng')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/beras.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Beras</h3>
+                    <p class="menu-desc">1 Liter Rp. 19.000</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 19.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/gulamerah.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Gula Merah</h3>
+                    <p class="menu-desc">1 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 30.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/pucukharum.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Pucuk Harum</h3>
+                    <p class="menu-desc">1 Botol</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/daia.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Daya Bubuk</h3>
+                    <p class="menu-desc">Rp. 5.000 3 Bungkus <br>Rp. 10.000 6 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/ngafi.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Ikan Ngafi</h3>
+                    <p class="menu-desc">1 Cupa Penuh</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 10.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/gula.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Gula</h3>
+                    <p class="menu-desc">Gula 1 Kilo</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 22.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="menu-card">
+                <img src="img/frisianflag.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Frisian Flag</h3>
+                    <p class="menu-desc">1 Sachet</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 2.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="menu-card">
+                <img src="img/garam.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Garam</h3>
+                    <p class="menu-desc">1 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 4.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="menu-card">
+                <img src="img/shinzui.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Shinzui</h3>
+                    <p class="menu-desc">1 Sabun Mandi</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 6.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="menu-card">
+                <img src="img/steker.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Steker</h3>
+                    <p class="menu-desc">Korek Api 1</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 3.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/lifebuoy.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Lifebuoy</h3>
+                    <p class="menu-desc">1 Sabun Mandi</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/pepsodent.png" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Pepsodent</h3>
+                    <p class="menu-desc">Rp. 7.000 75 Gram <br>Rp. 11.000 120 Gram</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 7.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/milku.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Milku</h3>
+                    <p class="menu-desc">1 Botol</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/floridina.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Floridina</h3>
+                    <p class="menu-desc">1 Botol</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/aqua.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Aqua</h3>
+                    <p class="menu-desc">1 Botol</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/fanta.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Fanta</h3>
+                    <p class="menu-desc">1 Botol</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/sprite.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Sprite</h3>
+                    <p class="menu-desc">1 Botol</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/cola.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Coca Cola</h3>
+                    <p class="menu-desc">1 Botol</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/marina.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Marina</h3>
+                    <p class="menu-desc">Kecil Rp. 7.000 <br>Besar Rp. 13.000</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 7.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/susukotak.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Susu Kotak</h3>
+                    <p class="menu-desc">1 Koak</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 4.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/gulakecil.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Gula</h3>
+                    <p class="menu-desc">Kecil Rp. 5.000 <br>Sedang Rp. 10.000</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/supermie.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Super Mie</h3>
+                    <p class="menu-desc">Rp. 4.000 1 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 4.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/minyak.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Minyak Tanah</h3>
+                    <p class="menu-desc">1 Botol Penuh</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 20.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/popok.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Popok</h3>
+                    <p class="menu-desc">Rp. 4.000 1 <br>Rp. 10.000 3</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 4.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/payung.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Payung</h3>
+                    <p class="menu-desc">1 Payung</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 35.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/rexona.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Rexona Sachet</h3>
+                    <p class="menu-desc">1 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/ferenlovely.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Feren Lovely</h3>
+                    <p class="menu-desc">1 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/gilet.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Alat Cukur</h3>
+                    <p class="menu-desc">1 Cukur Kumis</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 6.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/nabati.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Nabati</h3>
+                    <p class="menu-desc">Kecil Rp. 2.000 <br>Besar Rp. 7.000</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 2.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/timebreak.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Time Break</h3>
+                    <p class="menu-desc">Kecil Rp. 1.000 <br>Besar Rp. 2.000</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 1.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/wafello.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Wafello</h3>
+                    <p class="menu-desc">1 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 2.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/laksa.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Laksa</h3>
+                    <p class="menu-desc">Bihun Laksa</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/padamu.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Padamu</h3>
+                    <p class="menu-desc">1 Mie Hun</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 6.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/krupuk.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Kerupuk</h3>
+                    <p class="menu-desc">1 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 10.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/popmie.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Pop Mie</h3>
+                    <p class="menu-desc">1 Cup Gelas</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 6.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/dancow.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Dancow</h3>
+                    <p class="menu-desc">1 Sachet</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 5.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/ovaltine.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Ovaltine</h3>
+                    <p class="menu-desc">1 Sachet</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 3.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/goodday.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>God Day Cappuccino</h3>
+                    <p class="menu-desc">1 Sachet</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 3.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/energen.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Energen</h3>
+                    <p class="menu-desc">1 Sachet</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 3.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/kopijahe.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Kopi Jahe</h3>
+                    <p class="menu-desc">Rp. 3.000 1 Sachet <br>Rp. 5.000 2 Sachet</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 3.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/abcmocca.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>ABC Mocca</h3>
+                    <p class="menu-desc">Rp. 3.000 1 Sachet <br>Rp. 5.000 2 Sachet</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 3.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/crimilate.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Crimilate</h3>
+                    <p class="menu-desc">Rp. 3.000 1 Sachet <br>Rp. 5.000 2 Sachet</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 2.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/sariwangi.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Daun Teh</h3>
+                    <p class="menu-desc">1 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 2.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/shampo.jpg" alt="Gambar Barang" class="menu-img">
+                <div class="menu-info">
+                    <h3>Shampo</h3>
+                    <p class="menu-desc">Hampir Semua Syampo</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 1.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Tidak Ada')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <a href="#" class="float-wa" onclick="pesanUmum()">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
