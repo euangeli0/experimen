@@ -3,13 +3,12 @@
     --primary-red: #D32F2F;
     /* Merah Cabai */
     --dark-red: #B71C1C;
-    /* Merah Gelap untuk Hover */
-    --accent-yellow: #FFC107;
-    /* Kuning Emas */
-    --text-dark: #212121;
-    --text-light: #757575;
-    --white: #FFFFFF;
-    --bg-light: #F9F9F9;
+    /* --- TEXT KETERANGAN */
+    --text-dark: white;
+    --text-light: white;
+    --white: #2c3447;
+    /* --- BACKGROUND --- */
+    --bg-light: #1F2533;
 }
 
 * {
@@ -65,11 +64,11 @@ header {
 .logo {
     font-size: 1.5rem;
     font-weight: 800;
-    color: var(--primary-red);
+    color: #D32F2F;
 }
 
 .logo span {
-    color: var(--accent-yellow);
+    color: #ffbf00;
 }
 
 .nav-links {
@@ -82,54 +81,18 @@ header {
     transition: 0.3s;
 }
 
-.btn-nav {
-    background-color: var(--primary-red);
-    color: var(--white);
+.fitur {
+    background-color: var(--dark-red);
+    color: white;
     padding: 8px 20px;
     border-radius: 20px;
     font-weight: 600;
-}
-
-.btn-nav:hover {
-    background-color: var(--dark-red);
-    color: white;
 }
 
 .menu-toggle {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
-}
-
-/* --- 3. HERO SECTION --- */
-.hero {
-    height: 100vh;
-    background: url('img/melkisna.png');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: var(--white);
-    padding-top: 300px;
-}
-
-.btn-cta {
-    background-color: var(--accent-yellow);
-    color: var(--text-dark);
-    padding: 15px 30px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    border-radius: 50px;
-    transition: 0.3s;
-    display: inline-block;
-    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
-}
-
-.btn-cta:hover {
-    transform: translateY(-3px);
-    background-color: #ffca2c;
 }
 
 /* --- 4. MENU SECTION --- */
@@ -168,11 +131,9 @@ header {
 /* --- SECTION --- */
 .section-title h2 {
     font-size: 2.5rem;
-    color: var(--primary-red);
+    color: rgb(245, 200, 179);
     margin-bottom: 10px;
 }
-
-/* --- SECTION --- */
 
 .menu-grid {
     display: grid;
@@ -181,12 +142,11 @@ header {
 }
 
 .menu-card {
-    background: var(--white);
+    background: url(img/background.png);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: 0.3s;
-    position: relative;
 }
 
 .menu-card:hover {
@@ -196,8 +156,7 @@ header {
 
 .menu-img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 300px;
 }
 
 .menu-info {
@@ -221,10 +180,15 @@ header {
     align-items: center;
 }
 
-.price {
+/* --- HARGA BARANG --- */
+.harga {
+    background-color: white;
+    color: var(--dark-red);
+    font-weight: 1000;
     font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--primary-red);
+    border-radius: 10px;
+    padding: 0px 8px;
+    border: none;
 }
 
 /* --- KETERSEDIAAN BARANG */
@@ -235,14 +199,6 @@ header {
     padding: 8px 15px;
     border-radius: 8px;
     font-size: 0.9rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
     gap: 5px;
     border: none;
-    cursor: pointer;
-}
-
-.ketersediaan:hover {
-    background-color: #1ebe57;
 }
