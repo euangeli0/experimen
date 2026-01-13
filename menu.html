@@ -4,20 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kios Melkisna</title>
+    <title>Kios Mandiri</title>
     <link rel="stylesheet" href="menu.css">
 </head>
 
 <body>
-
     <header>
         <nav class="navbar">
-            <div class="logo">KIOS <span>MELKISNA</span></div>
+            <div class="logo">KIOS <span>MANDIRI</span></div>
             <div class="menu-toggle" onclick="toggleMenu()">
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html" class="btn-nav">Beranda</a></li>
+                <li><a href="index.html" class="fitur">Beranda</a></li>
             </ul>
         </nav>
     </header>
@@ -28,138 +27,124 @@
             <div class="search-container">
                 <input type="text" id="searchInput" placeholder="Cari barang..." onkeyup="searchBarang()">
             </div>
-
         </div>
 
         <div class="menu-grid">
             <div class="menu-card">
-                <img src="data:image/jpeg;base64,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" alt="Gambar Barang" class="menu-img">
+                <img src="img/surya.png" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Roko Surya</h3>
                     <p class="menu-desc">Stenga Bungkus Rp 20.000</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 39.000</span>
+                        <span class="harga">Rp 39.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/sampoerna.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/sampoerna.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Roko Sampoerna</h3>
                     <p class="menu-desc">Stenga Bungkus Rp. 20.000</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 39.000</span>
+                        <span class="harga">Rp 39.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/magnum.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/magnum.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Roko Magnum</h3>
                     <p class="menu-desc">Stenga Bungkus Rp 15.000</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 29.000</span>
+                        <span class="harga">Rp 29.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/djisamsoe.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/djisamsoe.png" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Roko DjiSamSoe</h3>
                     <p class="menu-desc">Rp. 2.000 1 Batang <br>Rp. 4.000 2 Batang</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 23.000</span>
+                        <span class="harga">Rp 23.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/beras.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/beras.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Beras</h3>
                     <p class="menu-desc">1 Liter</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 19.000</span>
+                        <span class="harga">Rp 19.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/gulamerah.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/gulamerah.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Gula Merah</h3>
                     <p class="menu-desc">1 Bungkus</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 30.000</span>
+                        <span class="harga">Rp 30.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/pucukharum.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/pucukharum.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Teh Pucuk Harum</h3>
                     <p class="menu-desc">1 Botol</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 5.000</span>
+                        <span class="harga">Rp 5.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/daia.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/daia.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Rinso Daia</h3>
                     <p class="menu-desc">Rp. 5.000 3 Bungkus <br>Rp. 10.000 6 Bungkus</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 5.000</span>
+                        <span class="harga">Rp 5.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/ngafi.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/ngafi.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Ikan Ngafi</h3>
                     <p class="menu-desc">1 Cupa Penuh</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 10.000</span>
+                        <span class="harga">Rp 10.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/gula.jpg" alt="Gambar Barang" class="menu-img">
-                <div class="menu-info">
-                    <h3>Gula</h3>
-                    <p class="menu-desc">Gula 1 Kilo</p>
-                    <div class="menu-footer">
-                        <span class="price">Rp 22.000</span>
-                        <button class="ketersediaan"><em>TERSEDIA</em></button>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="menu-card">
-                <img src="img/frisianflag.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/frisianflag.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Susu Frisian Flag</h3>
                     <p class="menu-desc">1 Sachet</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 2.000</span>
+                        <span class="harga">Rp 2.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
@@ -167,12 +152,12 @@
 
 
             <div class="menu-card">
-                <img src="img/garam.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/garam.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Garam</h3>
                     <p class="menu-desc">1 Bungkus</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 4.000</span>
+                        <span class="harga">Rp 4.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
@@ -180,12 +165,12 @@
 
 
             <div class="menu-card">
-                <img src="img/shinzui.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/shinzui.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Sabun Shinzui</h3>
                     <p class="menu-desc">1 Sabun Mandi</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 6.000</span>
+                        <span class="harga">Rp 6.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
@@ -193,528 +178,683 @@
 
 
             <div class="menu-card">
-                <img src="img/steker.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/steker.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Steker</h3>
                     <p class="menu-desc">Korek Api 1</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 3.000</span>
+                        <span class="harga">Rp 3.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/lifebuoy.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/lifebuoy.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Sabun Lifebuoy</h3>
                     <p class="menu-desc">1 Sabun Mandi</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 5.000</span>
+                        <span class="harga">Rp 5.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/pepsodent.png" alt="Gambar Barang" class="menu-img">
+                <img src="img/pepsodent.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Pepsodent</h3>
                     <p class="menu-desc">Rp. 7.000 75 Gram <br>Rp. 11.000 120 Gram</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 7.000</span>
+                        <span class="harga">Rp 7.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/milku.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/milku.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Susu Milku</h3>
                     <p class="menu-desc">1 Botol</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 5.000</span>
+                        <span class="harga">Rp 5.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/floridina.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/floridina.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Floridina</h3>
                     <p class="menu-desc">1 Botol</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 5.000</span>
+                        <span class="harga">Rp 5.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/aqua.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/aquabotol.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
-                    <h3>Aqua</h3>
+                    <h3>Aqua Botol</h3>
                     <p class="menu-desc">1 Botol</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 5.000</span>
+                        <span class="harga">Rp 5.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/fanta.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/fanta.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Fanta</h3>
                     <p class="menu-desc">1 Botol</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 5.000</span>
+                        <span class="harga">Rp 5.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/sprite.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/sprite.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Sprite</h3>
                     <p class="menu-desc">1 Botol</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 5.000</span>
+                        <span class="harga">Rp 5.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/cola.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/cola.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Coca Cola</h3>
                     <p class="menu-desc">1 Botol</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 5.000</span>
+                        <span class="harga">Rp 5.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/marina.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/marina.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Hand Body Marina</h3>
                     <p class="menu-desc">Kecil Rp. 7.000 <br>Besar Rp. 13.000</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 7.000</span>
+                        <span class="harga">Rp 7.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/susukotak.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/susukotak.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Susu Kotak</h3>
                     <p class="menu-desc">1 Koak</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 4.000</span>
+                        <span class="harga">Rp 4.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/gulakecil.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/gulakecil.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Gula</h3>
-                    <p class="menu-desc">Kecil Rp. 5.000 <br>Sedang Rp. 10.000</p>
+                    <p class="menu-desc">Kecil Rp. 5.000 <br>Sedang Rp. 10.000 <br> 1 Kilo Rp 22.000</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 5.000</span>
+                        <span class="harga">Rp 5.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/supermie.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/supermieab.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Super Mie</h3>
                     <p class="menu-desc">Rp. 4.000 1 Bungkus</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 4.000</span>
+                        <span class="harga">Rp 4.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/minyak.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/minyaktanah.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Minyak Tanah</h3>
                     <p class="menu-desc">1 Botol Penuh</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 20.000</span>
+                        <span class="harga">Rp 20.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/popok.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/popok.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Popok</h3>
                     <p class="menu-desc">Rp. 4.000 1 <br>Rp. 10.000 3</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 4.000</span>
+                        <span class="harga">Rp 4.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/payung.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/payung.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Payung</h3>
                     <p class="menu-desc">1 Payung</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 35.000</span>
+                        <span class="harga">Rp 35.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/rexona.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/rexona.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Rexona Sachet</h3>
                     <p class="menu-desc">1 Bungkus</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 5.000</span>
+                        <span class="harga">Rp 5.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/ferenlovely.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/ferenlovely.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Feren Lovely</h3>
                     <p class="menu-desc">1 Bungkus</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 5.000</span>
+                        <span class="harga">Rp 5.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/gilet.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/gilet.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Alat Cukur</h3>
                     <p class="menu-desc">1 Cukur Kumis</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 6.000</span>
+                        <span class="harga">Rp 6.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/nabati.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/nabati.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Nabati</h3>
                     <p class="menu-desc">Kecil Rp. 2.000 <br>Besar Rp. 7.000</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 2.000</span>
+                        <span class="harga">Rp 2.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/timebreak.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/timebreak.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Time Break</h3>
                     <p class="menu-desc">Kecil Rp. 1.000 <br>Besar Rp. 2.000</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 1.000</span>
+                        <span class="harga">Rp 1.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/wafello.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/wafello.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Wafello</h3>
                     <p class="menu-desc">1 Bungkus</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 2.000</span>
+                        <span class="harga">Rp 2.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/laksa.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/laksa.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Mie Laksa</h3>
                     <p class="menu-desc">Bihun Laksa</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 5.000</span>
+                        <span class="harga">Rp 5.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/padamu.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/padamu.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Mie Padamu</h3>
                     <p class="menu-desc">1 Mie Hun</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 6.000</span>
+                        <span class="harga">Rp 6.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/krupuk.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/krupuk.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Kerupuk</h3>
                     <p class="menu-desc">1 Bungkus</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 10.000</span>
+                        <span class="harga">Rp 10.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/popmie.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/popmie.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Pop Mie</h3>
                     <p class="menu-desc">1 Cup Gelas</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 6.000</span>
+                        <span class="harga">Rp 6.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/dancow.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/dancow.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Susu Dancow</h3>
                     <p class="menu-desc">1 Sachet</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 5.000</span>
+                        <span class="harga">Rp 5.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/ovaltine.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/ovaltine.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Susu Ovaltine</h3>
                     <p class="menu-desc">1 Sachet</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 3.000</span>
+                        <span class="harga">Rp 3.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/goodday.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/goodday.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Kopi God Day Cappuccino</h3>
                     <p class="menu-desc">1 Sachet</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 3.000</span>
+                        <span class="harga">Rp 3.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/energen.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/energen.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Susu Energen</h3>
                     <p class="menu-desc">1 Sachet</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 3.000</span>
+                        <span class="harga">Rp 3.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/kopijahe.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/kopijahe.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Kopi Jahe</h3>
                     <p class="menu-desc">Rp. 3.000 1 Sachet <br>Rp. 5.000 2 Sachet</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 3.000</span>
+                        <span class="harga">Rp 3.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/abcmocca.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/abcmocca.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Kopi ABC Mocca</h3>
                     <p class="menu-desc">Rp. 3.000 1 Sachet <br>Rp. 5.000 2 Sachet</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 3.000</span>
+                        <span class="harga">Rp 3.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/crimilate.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/crimilate.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Kopi Crimilate</h3>
                     <p class="menu-desc">Rp. 3.000 1 Sachet <br>Rp. 5.000 2 Sachet</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 2.000</span>
+                        <span class="harga">Rp 3.000</span>
+                        <button class="ketersediaan"><em>TERSEDIA</em></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <img src="img/whitecoffe.jpg" alt="Gambar Eror" class="menu-img">
+                <div class="menu-info">
+                    <h3>White Coffie</h3>
+                    <p class="menu-desc">Rp. 3.000 1 Sachet <br>Rp. 5.000 2 Sachet</p>
+                    <div class="menu-footer">
+                        <span class="harga">Rp 3.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/sariwangi.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/sariwangi.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Daun Teh</h3>
                     <p class="menu-desc">1 Bungkus</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 2.000</span>
+                        <span class="harga">Rp 2.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/shampo.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/shampo.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Shampo</h3>
                     <p class="menu-desc">Hampir Semua Syampo</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 1.000</span>
+                        <span class="harga">Rp 1.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/rosta.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/rosta.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Kacang Rosta</h3>
                     <p class="menu-desc">Garuda Rosta</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 3.000</span>
+                        <span class="harga">Rp 3.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/meses.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/meses.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Meses</h3>
                     <p class="menu-desc">Meses 1 Bungkus</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 20.000</span>
+                        <span class="harga">Rp 20.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/kuinanas.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/kuinanas.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Kui Nanas</h3>
                     <p class="menu-desc">1 Pak Rp. 14.000<br>1 Petak Rp. 5.000</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 14.000</span>
+                        <span class="harga">Rp 14.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/romasandwich.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/romasandwich.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
-                    <h3>kui Roma Sandwich</h3>
+                    <h3>Kui Roma Sandwich</h3>
                     <p class="menu-desc">1 Pak Rp. 10.000</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 10.000</span>
+                        <span class="harga">Rp 10.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/minyakita.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/minyakita.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Minyak Kelapa</h3>
                     <p class="menu-desc">1 Liter Rp. 21.000</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 21.000</span>
+                        <span class="harga">Rp 21.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/tisu.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/tisu.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Tisu</h3>
                     <p class="menu-desc">Kecil Rp. 3.000 <br>Sedang Rp. 5.000 <br>Besar Rp. 15.000</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 3.000</span>
+                        <span class="harga">Rp 3.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/kejuhefjuna.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/kejuhefjuna.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Keju WINCheez</h3>
                     <p class="menu-desc">Shef Juna</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 20.000</span>
+                        <span class="harga">Rp 20.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/kejucalf.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/kejucalf.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Keju CALF</h3>
                     <p class="menu-desc">CALF Cheddal Cheese</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 17.000</span>
+                        <span class="harga">Rp 17.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/tapioka.jpg" alt="Gambar Barang" class="menu-img">
+                <img src="img/tapioka.jpg" alt="Gambar Eror" class="menu-img">
                 <div class="menu-info">
                     <h3>Tepung Tapioka</h3>
                     <p class="menu-desc">1 Pak</p>
                     <div class="menu-footer">
-                        <span class="price">Rp 22.000</span>
+                        <span class="harga">Rp 22.000</span>
+                        <button class="ketersediaan"><em>TERSEDIA</em></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/tembakaushag.jpg" alt="Gambar Eror" class="menu-img">
+                <div class="menu-info">
+                    <h3>Roko Tembakau Shag</h3>
+                    <p class="menu-desc">1 Bungkus + Gau</p>
+                    <div class="menu-footer">
+                        <span class="harga">Rp 10.000</span>
+                        <button class="ketersediaan"><em>TERSEDIA</em></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/goriorio.jpg" alt="Gambar Eror" class="menu-img">
+                <div class="menu-info">
+                    <h3>Goriorio</h3>
+                    <p class="menu-desc">1 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="harga">Rp 1.000</span>
+                        <button class="ketersediaan"><em>TERSEDIA</em></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/kecap.jpg" alt="Gambar Eror" class="menu-img">
+                <div class="menu-info">
+                    <h3>Kecap</h3>
+                    <p class="menu-desc">1 Sachet</p>
+                    <div class="menu-footer">
+                        <span class="harga">Rp 1.000</span>
+                        <button class="ketersediaan"><em>TERSEDIA</em></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/miekriuk.jpg" alt="Gambar Eror" class="menu-img">
+                <div class="menu-info">
+                    <h3>Mie Kriuk</h3>
+                    <p class="menu-desc">1 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="harga">Rp 4.000</span>
+                        <button class="ketersediaan"><em>TERSEDIA</em></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/miesoto.jpg" alt="Gambar Eror" class="menu-img">
+                <div class="menu-info">
+                    <h3>Mie Soto</h3>
+                    <p class="menu-desc">1 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="harga">Rp 4.000</span>
+                        <button class="ketersediaan"><em>TERSEDIA</em></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/indomie.jpg" alt="Gambar Eror" class="menu-img">
+                <div class="menu-info">
+                    <h3>Indo Mie</h3>
+                    <p class="menu-desc">1 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="harga">Rp 4.000</span>
+                        <button class="ketersediaan"><em>TERSEDIA</em></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/amplop.jpg" alt="Gambar Eror" class="menu-img">
+                <div class="menu-info">
+                    <h3>Amplop</h3>
+                    <p class="menu-desc">1 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="harga">Rp 1.000</span>
+                        <button class="ketersediaan"><em>TERSEDIA</em></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/aquagelas.jpg" alt="Gambar Eror" class="menu-img">
+                <div class="menu-info">
+                    <h3>Aqua Gelas</h3>
+                    <p class="menu-desc">1 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="harga">Rp 1.000</span>
+                        <button class="ketersediaan"><em>TERSEDIA</em></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/better.jpg" alt="Gambar Eror" class="menu-img">
+                <div class="menu-info">
+                    <h3>Better</h3>
+                    <p class="menu-desc">1 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="harga">Rp 2.000</span>
+                        <button class="ketersediaan"><em>TERSEDIA</em></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/kopichocolatos.jpg" alt="Gambar Eror" class="menu-img">
+                <div class="menu-info">
+                    <h3>Kopi Chocolatos</h3>
+                    <p class="menu-desc">1 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="harga">Rp 3.000</span>
+                        <button class="ketersediaan"><em>TERSEDIA</em></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/saustomat.jpg" alt="Gambar Eror" class="menu-img">
+                <div class="menu-info">
+                    <h3>Saus Tomat</h3>
+                    <p class="menu-desc">1 Bungkus</p>
+                    <div class="menu-footer">
+                        <span class="harga">Rp 10.000</span>
+                        <button class="ketersediaan"><em>TERSEDIA</em></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/telur.jpg" alt="Gambar Eror" class="menu-img">
+                <div class="menu-info">
+                    <h3>Telur</h3>
+                    <p class="menu-desc">1 Butir</p>
+                    <div class="menu-footer">
+                        <span class="harga">Rp 3.000</span>
                         <button class="ketersediaan"><em>TERSEDIA</em></button>
                     </div>
                 </div>
@@ -728,4 +868,3 @@
 </body>
 
 </html>
-
