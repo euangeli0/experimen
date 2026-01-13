@@ -92,18 +92,18 @@ header {
 }
 
 /* --- 3. HERO SECTION --- */
-.hero {
+.kios {
     height: 100vh;
-    background: url('img/melkisna.png');
+    background: url('img/background.png');
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--bg-light);
-    padding-top: 300px;
+
 }
 
 .btn-cta {
